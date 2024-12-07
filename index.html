@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced File Hosting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-4xl text-center text-blue-600">Advanced File Hosting</h1>
+        <div class="mt-5 bg-white shadow-md rounded-lg p-5">
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <label class="block text-sm font-medium text-gray-700">Choose File to Upload</label>
+                <input type="file" name="uploaded_file" class="block mt-2 mb-4 border p-2 w-full" required>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Upload</button>
+            </form>
+        </div>
+
+        <div class="mt-10 bg-white shadow-md rounded-lg p-5">
+            <h2 class="text-2xl mb-4">Uploaded Files</h2>
+            <ul id="file-list" class="list-disc list-inside">
+                <!-- List Files Here -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
